@@ -13,5 +13,3 @@ Known working:
 * 2021-02-06, Fairphone 3, Android 10
 
 You ought to be able to download and open it on an Android device. (You'll see a number of warnings from Google Play Protect about how old the apk is.)
-
-![screenshot]("screenshots/2021-02-06 play 3.jpg")
