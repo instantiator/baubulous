@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E386A8E5-9EAE-49EF-9D39-837D98250FD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baubulous.Portable</RootNamespace>
+    <AssemblyName>Baubulous.Portable</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BaseInitParams.cs" />
+    <Compile Include="BaubulousGame.cs" />
+    <Compile Include="BaubulousModel.cs" />
+    <Compile Include="BaubulousModelInitParams.cs" />
+    <Compile Include="BaubulousSphericalInitParams.cs" />
+    <Compile Include="BaubulousSphericalObject.cs" />
+    <Compile Include="GameLogic\GameState.cs" />
+    <Compile Include="GameLogic\IGameItem.cs" />
+    <Compile Include="GameLogic\Interaction.cs" />
+    <Compile Include="GameLogic\GameBoundingBox.cs" />
+    <Compile Include="GameLogic\TowerMapLevel.cs" />
+    <Compile Include="GameLogic\TowerMapLevelInitParams.cs" />
+    <Compile Include="GameObjects\BaubleCollectible.cs" />
+    <Compile Include="GameObjects\BaublePlayer.cs" />
+    <Compile Include="GameObjects\BaubleInitParams.cs" />
+    <Compile Include="GameObjects\Branch.cs" />
+    <Compile Include="GameObjects\ModelPlayerDefinition.cs" />
+    <Compile Include="GameObjects\WavesDefinition.cs" />
+    <Compile Include="GeoHelper.cs" />
+    <Compile Include="Geometries\GeometricPrimitive.cs" />
+    <Compile Include="Geometries\SpherePrimitive.cs" />
+    <Compile Include="Geometries\TexturedSphere.cs" />
+    <Compile Include="Geometries\VertexPositionNormal.cs" />
+    <Compile Include="IDrawable.cs" />
+    <Compile Include="IInitialises.cs" />
+    <Compile Include="Levels\Level1.cs" />
+    <Compile Include="BaseLifecycleObject.cs" />
+    <Compile Include="BaubulousMultiBufferObjectInitParams.cs" />
+    <Compile Include="BaubulousMultiBufferObject.cs" />
+    <Compile Include="GameObjects\Platform.cs" />
+    <Compile Include="GameObjects\PlatformDefinition.cs" />
+    <Compile Include="GameObjects\ModelPlayer.cs" />
+    <Compile Include="Levels\Level2.cs" />
+    <Compile Include="Levels\Level3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameObjects\Tower.cs" />
+    <Compile Include="GameObjects\TowerDefinition.cs" />
+    <Compile Include="GameObjects\Waves.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.Portable.3.2.99.1-Beta\lib\portable-net45+win+wpa81+Xamarin.iOS10+MonoAndroid10+MonoTouch10\MonoGame.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
