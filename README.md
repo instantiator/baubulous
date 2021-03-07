@@ -1,6 +1,6 @@
 # Baubulous
 
-A game demo created for Christmas 2016, inspired by 8-bit game [Nebulous](https://en.wikipedia.org/wiki/Nebulus_(video_game)).
+A game demo created for Christmas 2016, inspired by 8-bit game [Nebulus](https://en.wikipedia.org/wiki/Nebulus_(video_game)).
 
 Baubulous is built in Xamarin + MonoGame. Sadly it won't compile in 2021.
 
